@@ -1,0 +1,89 @@
+[gd_resource type="Resource" script_class="DialogueResource" format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_yt80u"]
+
+[resource]
+script = ExtResource("1_yt80u")
+using_states = PackedStringArray()
+cues = {
+"start": "1"
+}
+character_names = PackedStringArray("Guy")
+first_cue = "0"
+lines = {
+"0": {
+&"id": "0",
+&"next_id": "1",
+&"type": "cue"
+},
+"1": {
+&"character": "Guy",
+&"id": "1",
+&"next_id": "2",
+&"static_id": "",
+&"text": "[[Hi|Hello|Howdy]], Can you grab ma crops from ma farm",
+&"type": "dialogue"
+},
+"2": {
+&"character": "Guy",
+&"id": "2",
+&"next_id": "3",
+&"static_id": "",
+&"text": "I'll tell you about where you are if you do",
+&"type": "dialogue"
+},
+"3": {
+&"id": "3",
+&"next_id": "4",
+&"responses": PackedStringArray("3", "5"),
+&"static_id": "",
+&"text": "Yes",
+&"type": "response"
+},
+"4": {
+&"character": "Guy",
+&"id": "4",
+&"next_id": "7",
+&"static_id": "",
+&"text": "Greate",
+&"type": "dialogue"
+},
+"5": {
+&"id": "5",
+&"next_id": "6",
+&"static_id": "",
+&"text": "Yes",
+&"type": "response"
+},
+"6": {
+&"character": "Guy",
+&"id": "6",
+&"next_id": "7",
+&"static_id": "",
+&"text": "Wowie Zowie Amazing",
+&"type": "dialogue"
+},
+"7": {
+&"character": "Guy",
+&"id": "7",
+&"next_id": "8",
+&"static_id": "",
+&"text": "Go head out",
+&"type": "dialogue"
+},
+"8": {
+&"id": "8",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"9": {
+&"id": "9",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+}
+}
+metadata/dialogue_manager_version = "4.1.0"

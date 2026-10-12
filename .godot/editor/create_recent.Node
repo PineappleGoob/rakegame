@@ -1,0 +1,15 @@
+AnimationPlayer
+MeshInstance3D
+Sprite3D
+CollisionShape3D
+Area3D
+CSGBox3D
+DirectionalLight3D
+SimpleGrassTextured
+SpotLight3D
+WorldEnvironment
+CanvasLayer
+AudioStreamPlayer
+TabBar
+ColorRect
+Camera3D

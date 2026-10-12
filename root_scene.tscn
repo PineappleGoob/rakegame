@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://c5v685mq67e6x"]
+
+[ext_resource type="PackedScene" uid="uid://unbt8bw3ae02" path="res://Hand Rake by CreativeTrio - svzOLCZ74s.glb" id="1_itajj"]
+
+[node name="Root Scene" unique_id=1715127809 instance=ExtResource("1_itajj")]

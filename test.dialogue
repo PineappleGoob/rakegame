@@ -1,0 +1,9 @@
+~ start
+Guy: [[Hi|Hello|Howdy]], Can you grab ma crops from ma farm
+Guy: I'll tell you about where you are if you do
+- Yes
+	Guy: Greate
+- Yes
+	Guy: Wowie Zowie Amazing
+Guy: Go head out
+=> END

@@ -1,0 +1,12 @@
+res://addons/simplegrasstextured/materials/icon.tres
+res://jumpscare.tres
+res://new_sprite_frames.tres
+res://Menu.gdshader
+res://fogoverride.gdshader
+res://rakegame.tscn
+res://character_body_3d.gd
+res://RealMain.tscn
+res://new_animation.tres
+res://control.gd
+res://Menu.tscn
+res://free.gd

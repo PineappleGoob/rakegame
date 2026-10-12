@@ -1,0 +1,244 @@
+[gd_scene format=3 uid="uid://cotu7inrgdmfd"]
+
+[ext_resource type="Script" uid="uid://ffod1hns4dqo" path="res://enemy.gd" id="1_1bvp3"]
+[ext_resource type="Script" uid="uid://v81pw7ee8plp" path="res://character_body_3d.gd" id="1_h2yge"]
+[ext_resource type="Script" uid="uid://cs5olpbh80yox" path="res://animatable_body_3d.gd" id="2_1bvp3"]
+[ext_resource type="Script" uid="uid://b8ijt83s82sd6" path="res://area_3d.gd" id="3_lquwl"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_38a3x"]
+shading_mode = 0
+diffuse_mode = 1
+albedo_color = Color(0.76350695, 0, 0.12695241, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_32isk"]
+material = SubResource("StandardMaterial3D_38a3x")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ywb8w"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_lquwl"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_1bvp3"]
+
+[sub_resource type="Environment" id="Environment_noarx"]
+background_mode = 1
+background_color = Color(0.0031138188, 0.12986287, 0.104521535, 1)
+background_energy_multiplier = 1.16
+ambient_light_energy = 2.81
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_uw5rc"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_uw5rc"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_a202f"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_uw5rc"]
+size = Vector3(15.700928, 1, 27.022827)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_uw5rc"]
+size = Vector3(91.61145, 1, 26.68982)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a202f"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_wq02u"]
+size = Vector3(1, 1, 0.9805908)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_wq02u"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_32mqo"]
+size = Vector3(0.529541, 1, 1)
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_noarx"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_noarx"]
+resource_local_to_scene = true
+render_priority = 1
+shading_mode = 0
+albedo_color = Color(0.44929606, 0.23670241, 0.050253212, 1)
+albedo_texture_msdf = true
+
+[sub_resource type="BoxMesh" id="BoxMesh_ttkge"]
+resource_local_to_scene = true
+lightmap_size_hint = Vector2i(13, 21)
+material = SubResource("StandardMaterial3D_noarx")
+size = Vector3(0.9790039, 1, 1)
+
+[sub_resource type="NavigationMesh" id="NavigationMesh_1bvp3"]
+vertices = PackedVector3Array(30.98349, 0.18178177, 12.329027, 30.98349, 0.18178177, 13.079027, 35.48349, 0.18178177, 13.079027, 30.23349, 0.18178177, 11.579027, 35.48349, 0.18178177, 1.5790272, 1.73349, 0.18178177, 1.5790272, 1.73349, 0.18178177, 11.579027, 30.98349, 0.18178177, 14.079027, 30.98349, 0.18178177, 21.079027, 30.98349, 0.18178177, 23.079027, 35.48349, 0.18178177, 23.079027, 30.23349, 0.18178177, 14.829027, 30.23349, 0.18178177, 20.329027, 28.98349, 0.18178177, 14.829027, 28.98349, 0.18178177, 20.329027, 27.73349, 0.18178177, 20.329027, 26.98349, 0.18178177, 21.079027, 1.73349, 0.18178177, 14.829027, 1.73349, 0.18178177, 29.829027, 26.98349, 0.18178177, 29.829027, 30.98349, 0.18178177, 30.329027, 35.48349, 0.18178177, 30.329027, 30.98349, 0.18178177, 32.329025, 30.23349, 0.18178177, 33.079025, 35.48349, 0.18178177, 43.829025, 1.73349, 0.18178177, 33.079025, 1.73349, 0.18178177, 43.829025)
+polygons = [PackedInt32Array(2, 1, 0), PackedInt32Array(0, 3, 2), PackedInt32Array(2, 3, 4), PackedInt32Array(6, 5, 3), PackedInt32Array(3, 5, 4), PackedInt32Array(7, 1, 2), PackedInt32Array(10, 9, 8), PackedInt32Array(7, 2, 11), PackedInt32Array(11, 2, 12), PackedInt32Array(12, 2, 8), PackedInt32Array(8, 2, 10), PackedInt32Array(11, 12, 13), PackedInt32Array(13, 12, 14), PackedInt32Array(13, 14, 15), PackedInt32Array(15, 16, 13), PackedInt32Array(13, 16, 17), PackedInt32Array(19, 18, 16), PackedInt32Array(16, 18, 17), PackedInt32Array(9, 10, 20), PackedInt32Array(20, 10, 21), PackedInt32Array(22, 20, 21), PackedInt32Array(22, 21, 23), PackedInt32Array(23, 21, 24), PackedInt32Array(25, 23, 26), PackedInt32Array(26, 23, 24)]
+agent_radius = 0.9
+agent_max_climb = 0.0
+agent_max_slope = 0.02
+filter_walkable_low_height_spans = true
+filter_baking_aabb = AABB(0, 0, 0, 0, 1, 0)
+
+[node name="Node3D" type="Node3D" unique_id=2034477687]
+
+[node name="da mooon ma boi" type="DirectionalLight3D" parent="." unique_id=113674410]
+transform = Transform3D(-0.5606389, 0.5006446, -0.6595749, 0, 0.79652995, 0.6045992, 0.8280604, 0.33896184, -0.4465657, -159.51906, 47.073338, -24.262089)
+shadow_enabled = true
+
+[node name="Enemy" type="CharacterBody3D" parent="." unique_id=1340647909]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54.65589, -0.2713927, 0)
+script = ExtResource("1_1bvp3")
+
+[node name="Area3D" type="Area3D" parent="Enemy" unique_id=2048499996]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6558914, -0.7286073, 0)
+script = ExtResource("3_lquwl")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Enemy/Area3D" unique_id=499308392]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.20102978)
+mesh = SubResource("BoxMesh_32isk")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Enemy/Area3D" unique_id=2115828908]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.20102978)
+shape = SubResource("BoxShape3D_ywb8w")
+
+[node name="hurtbox" type="Node" parent="Enemy" unique_id=1823253898]
+
+[node name="AnimatableBody3D" type="AnimatableBody3D" parent="Enemy/hurtbox" unique_id=681323795]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, -1, -0.20102978)
+script = ExtResource("2_1bvp3")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Enemy" unique_id=519069757]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.46123576, -1.0187063, 0)
+mesh = SubResource("CapsuleMesh_lquwl")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Enemy" unique_id=1115140473]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.47670817, -1.0387847, 0)
+shape = SubResource("CapsuleShape3D_1bvp3")
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="Enemy" unique_id=1801095859]
+path_desired_distance = 2.0
+use_3d_avoidance = true
+debug_enabled = true
+
+[node name="VisionRay" type="RayCast3D" parent="Enemy" unique_id=1892898839]
+transform = Transform3D(-0.017613549, 18.74149, 0, -0.7787108, -0.42391106, 0, 0, 0, 1, -0.05306244, -0.4612224, 0)
+collision_mask = 255
+collide_with_areas = true
+
+[node name="lose_track" type="Timer" parent="Enemy" unique_id=1059397793]
+wait_time = 5.533
+one_shot = true
+
+[node name="patrol_timer" type="Timer" parent="Enemy" unique_id=322701569]
+wait_time = 2.0
+one_shot = true
+
+[node name="player" type="CharacterBody3D" parent="." unique_id=1437652704]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -58.560776, -1.350662, -10.39403)
+script = ExtResource("1_h2yge")
+
+[node name="Camera3D" type="Camera3D" parent="player" unique_id=947739628]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6, 0)
+visible = false
+environment = SubResource("Environment_noarx")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="player" unique_id=890038755]
+shape = SubResource("CapsuleShape3D_uw5rc")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="player" unique_id=929445189]
+mesh = SubResource("CapsuleMesh_uw5rc")
+
+[node name="da roof but floor" type="StaticBody3D" parent="." unique_id=2022499981]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.7730713, -2.869259, -4.739319)
+visible = false
+physics_material_override = SubResource("PhysicsMaterial_a202f")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="da roof but floor" unique_id=1631586474]
+transform = Transform3D(100, 0, 0, 0, 1, 0, 0, 0, 100, 0.024780273, 0, -0.19696045)
+mesh = SubResource("BoxMesh_uw5rc")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="da roof but floor" unique_id=844522998]
+transform = Transform3D(100, 0, 0, 0, 1, 0, 0, 0, 584.795, 0.02650851, 0, 0)
+visibility_parent = NodePath("../MeshInstance3D")
+shape = SubResource("BoxShape3D_uw5rc")
+
+[node name="shed" type="Node" parent="." unique_id=2084313494]
+
+[node name="shed" type="StaticBody3D" parent="shed" unique_id=1714889575]
+transform = Transform3D(11.258695, 0, 0, 0, 5.6080227, 0, 0, 0, 4.3341537, 0, 1.3630834, 5.7784905)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="shed/shed" unique_id=1172016257]
+material_override = SubResource("StandardMaterial3D_a202f")
+mesh = SubResource("BoxMesh_wq02u")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="shed/shed" unique_id=2066773406]
+transform = Transform3D(1, 0, 0, 0, 0.9999918, 0, 0, 0, 0.99999964, 0, 0, 0)
+shape = SubResource("BoxShape3D_wq02u")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="shed" unique_id=1557418844]
+transform = Transform3D(9.303259, -0.1473768, 0, 2.7898083, 0.4914619, 0, 0, 0, 4.334153, -2.6700675, 5.0111227, 5.8188686)
+material_override = SubResource("StandardMaterial3D_a202f")
+mesh = SubResource("BoxMesh_32mqo")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="shed" unique_id=1081271732]
+transform = Transform3D(9.3382015, 0.14107506, 0, -2.670518, 0.49330783, 0, 0, 0, 4.3341537, 2.3720474, 5.0111227, 5.8188686)
+material_override = SubResource("StandardMaterial3D_a202f")
+mesh = SubResource("BoxMesh_32mqo")
+
+[node name="table" type="Node" parent="." unique_id=1043118119]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="table" unique_id=1690795769]
+transform = Transform3D(8.468959, 0, 0, 0, 0.34856582, 0, 0, 0, 3.4394948, -2.5791214, 0, 1.799236)
+physics_material_override = SubResource("PhysicsMaterial_noarx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="table/StaticBody3D" unique_id=2144404825]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.40734953, 0, 0)
+mesh = SubResource("BoxMesh_ttkge")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="table/StaticBody3D" unique_id=1315970091]
+transform = Transform3D(1, 0, 0, 0, 0.9999918, 0, 0, 0, 0.99999964, 0.39685148, 0, 0)
+shape = SubResource("BoxShape3D_wq02u")
+
+[node name="walls" type="Node" parent="." unique_id=416969991]
+
+[node name="NavigationRegion3D" type="NavigationRegion3D" parent="." unique_id=2116116509]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -74.23349, -2.0517607, -16.079027)
+navigation_mesh = SubResource("NavigationMesh_1bvp3")
+
+[node name="CSGBox3D8" type="CSGBox3D" parent="NavigationRegion3D" unique_id=1956967065]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 74.23349, -0.81821823, 16.079027)
+use_collision = true
+size = Vector3(300, 1, 300)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="NavigationRegion3D" unique_id=484237868]
+transform = Transform3D(1, 0, 0, 0, 3.4073234, 0, 0, 0, 1, 18.736755, 1.2906389, 0)
+use_collision = true
+size = Vector3(38.47351, 1, 1)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="NavigationRegion3D" unique_id=87281183]
+transform = Transform3D(1, 0, 0, 0, 3.4073234, 0, 0, 0, 1, 14.650848, 1.2906389, 13.156546)
+use_collision = true
+size = Vector3(30.301697, 1, 1)
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="NavigationRegion3D" unique_id=2056182819]
+transform = Transform3D(1, 0, 0, 0, 3.4073234, 0, 0, 0, 1, 14.650848, 1.2906389, 31.41505)
+use_collision = true
+size = Vector3(30.301697, 1, 1)
+
+[node name="CSGBox3D7" type="CSGBox3D" parent="NavigationRegion3D" unique_id=1462390880]
+transform = Transform3D(1, 0, 0, 0, 3.4073234, 0, 0, 0, 1, 28.962593, 1.2906389, 26.631847)
+autosmooth = true
+use_collision = true
+collision_layer = 4607
+size = Vector3(1.6782074, 1, 10.566406)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="NavigationRegion3D" unique_id=1076580654]
+transform = Transform3D(1, 0, 0, 0, 3.4073234, 0, 0, 0, 1, 0, 1.2906389, 23.246666)
+use_collision = true
+size = Vector3(1, 1, 46.038574)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="NavigationRegion3D" unique_id=340123639]
+transform = Transform3D(1, 0, 0, 0, 3.4073234, 0, 0, 0, 1, 18.707764, 1.2906389, 45.605675)
+use_collision = true
+size = Vector3(38.415527, 1, 1.3205566)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="NavigationRegion3D" unique_id=640268169]
+transform = Transform3D(1, 0, 0, 0, 3.4073234, 0, 0, 0, 1, 37.28235, 1.2906389, 23.130882)
+use_collision = true
+size = Vector3(1.2663574, 1, 46.27014)
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=76335470]
+transform = Transform3D(1, 0, 0, 0, 1.1924881e-08, 1, 0, -1, 1.1924881e-08, -56, 36, 8)
+current = true
